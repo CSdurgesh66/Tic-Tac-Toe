@@ -1,0 +1,91 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background-image: url(img.jpg);
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.playerInfo{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    width: 15rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.tic-tac-toe{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    height: 20rem;
+    aspect-ratio: 1/1;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 2rem;
+    margin-top: 13rem;
+    margin-bottom: 5rem;
+    border: 0.01rem solid rgba(255, 255, 255,1);
+    border-radius: 1rem;
+    box-shadow: 0.01rem 0.01rem 1rem rgb(70, 65, 65);
+    color: white;
+    
+}
+
+.box{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+
+.box0,.box1,.box3,.box4{
+    border-bottom: 0.15rem solid white;
+    border-right: 0.15rem solid white;
+
+}
+.box6,.box7{
+    border-right: 0.15rem solid white;
+}
+
+.box2,.box5{
+    border-bottom: 0.15rem solid white;
+}
+
+.newGame{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 0.5rem;
+    color: white;
+    letter-spacing: 1px;
+
+
+}
+
+.win{
+    background-color: rgb(38, 112, 38);
+    
+}
+
